@@ -148,6 +148,7 @@ section.white .card { background: var(--cream); }
 @media (max-width: 560px) { .needs { grid-template-columns: 1fr; } }
 .need { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; display: grid; gap: 10px; align-content: start; }
 .need.gift { background: var(--gold-soft); border-color: #E7CF96; }
+.need.gift { grid-column: 1 / -1; }
 .need .ico { width: 46px; height: 46px; border-radius: 50%; background: #E3F0EE; display: grid; place-items: center; }
 .need.gift .ico { background: #FFFFFF; }
 .need .ico svg { width: 24px; height: 24px; }
@@ -361,6 +362,7 @@ footer a { color: #F2C66B; }
         <div class="need"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#14655B" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg></div><h3 data-i18n="needs.eduT"></h3><p data-i18n="needs.eduD"></p><a class="link" href="https://forms.gle/AT2C73HaVgBZKhcQ6" target="_blank" rel="noopener" data-i18n="needs.offer"></a></div>
         <div class="need"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#14655B" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 19V6a2 2 0 0 1 2-2h12v15H6a2 2 0 0 0-2 2Z"/><path d="M8 8h6"/></svg></div><h3 data-i18n="needs.supT"></h3><p data-i18n="needs.supD"></p><a class="link" href="https://forms.gle/AT2C73HaVgBZKhcQ6" target="_blank" rel="noopener" data-i18n="needs.offer"></a></div>
         <div class="need"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#14655B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5Z"/></svg></div><h3 data-i18n="needs.proT"></h3><p data-i18n="needs.proD"></p><a class="link" href="https://forms.gle/AT2C73HaVgBZKhcQ6" target="_blank" rel="noopener" data-i18n="needs.offer"></a></div>
+        <div class="need"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#14655B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 11h16M8 21l1.5-4M16 21l-1.5-4"/><circle cx="8.5" cy="14" r="1" fill="#14655B"/><circle cx="15.5" cy="14" r="1" fill="#14655B"/></svg></div><h3 data-i18n="needs.trT"></h3><p data-i18n="needs.trD"></p><a class="link" href="https://forms.gle/AT2C73HaVgBZKhcQ6" target="_blank" rel="noopener" data-i18n="needs.offer"></a></div>
         <div class="need gift"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#C8901A" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></div><h3 data-i18n="needs.cashT"></h3><p data-i18n="needs.cashD"></p><a class="link" href="https://forms.gle/AT2C73HaVgBZKhcQ6" target="_blank" rel="noopener" data-i18n="needs.offerCash"></a></div>
       </div>
     </div>
@@ -775,7 +777,12 @@ const T = {
     "fc.l2": "Choose how often and how you will deliver it",
     "fc.l3": "We follow up with you personally",
     "fc.cta": "Open the contribution form ↗",
-    "fc.note": "The form opens in a new tab, in English and Spanish."
+    "fc.note": "The form opens in a new tab, in English and Spanish.",
+    "needs.title": "Seven ways to contribute.",
+    "needs.clothD": "Jackets and blankets for cold snaps, everyday clothing and shoes, and professional attire so survivors can walk into interviews with confidence.",
+    "needs.trT": "Transportation",
+    "needs.trD": "Transit passes, gas cards and rideshare credits so people can reach jobs, interviews, shelters and appointments.",
+    "needs.supD": "Backpacks, notebooks, calculators and school uniforms, especially for January, when children go back to school right after the holidays."
   },
   es: {
     "nav.programs": "Programas", "nav.help": "Pedir ayuda", "nav.involved": "Participa", "nav.story": "Nuestra historia", "nav.contact": "Contacto", "nav.donate": "Donar",
@@ -1016,7 +1023,12 @@ const T = {
     "fc.l2": "Elige con qué frecuencia y cómo lo entregarás",
     "fc.l3": "Te contactamos personalmente",
     "fc.cta": "Abrir el formulario ↗",
-    "fc.note": "El formulario se abre en una nueva pestaña, en español e inglés."
+    "fc.note": "El formulario se abre en una nueva pestaña, en español e inglés.",
+    "needs.title": "Siete formas de aportar.",
+    "needs.clothD": "Abrigos y cobijas para los días fríos, ropa y calzado de uso diario, y ropa profesional para que las sobrevivientes lleguen a sus entrevistas con confianza.",
+    "needs.trT": "Transporte",
+    "needs.trD": "Pases de transporte público, tarjetas de gasolina y créditos de viajes compartidos para llegar al trabajo, a entrevistas, a refugios y a citas.",
+    "needs.supD": "Mochilas, cuadernos, calculadoras y uniformes escolares, sobre todo para enero, cuando la niñez regresa a clases justo después de las fiestas."
   }
 };
 
